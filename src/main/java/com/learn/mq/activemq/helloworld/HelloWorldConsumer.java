@@ -16,7 +16,7 @@ public class HelloWorldConsumer implements Runnable, ExceptionListener {
         try {
 
             // Create a ConnectionFactory
-            ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("vm://localhost");
+            ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://10.17.2.7:61616");
 
             // Create a Connection
             Connection connection = connectionFactory.createConnection();
