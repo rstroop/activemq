@@ -13,7 +13,7 @@ public class HelloWorldProducer implements Runnable {
     public void run() {
         try {
             // Create a ConnectionFactory
-            ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://172.18.71.21:61616");
+            ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("http://localhost:80/activemq");
             // ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("http://amq-034.osv3poc.secureworkslab.com:80");
 
             // Create a Connection

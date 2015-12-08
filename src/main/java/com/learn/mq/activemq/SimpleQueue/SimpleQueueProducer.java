@@ -13,7 +13,7 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 
 public class SimpleQueueProducer {
 
-    private static String brokerURL = "tcp://localhost:61616";
+    private static String brokerURL = "http://localhost:80/activemq";
     private static transient ConnectionFactory factory;
     private transient Connection connection;
     private transient Session session;
